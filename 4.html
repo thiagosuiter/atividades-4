@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mudar Cor com Enter</title>
+</head>
+<body>
+
+  <input type="text" id="cor" placeholder="Digite uma cor (ex: red, #00ff00)" />
+
+  <script>
+    const campo = document.getElementById("cor");
+
+    campo.addEventListener("keydown", function(evento) {
+      if (evento.key === "Enter") {
+        document.body.style.backgroundColor = campo.value;
+      }
+    });
+  </script>
+
+</body>
+</html>
